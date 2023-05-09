@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Permite controlar a viewport (tela) -->
+  <!-- Fornece ao navegador instruções de como controlar as dimensões e a escala da página -->
+  <!-- width=device-width define a largura da página para seguir a largura da tela do dispositivo (que varia dependendo do dispositivo) -->
+  <!-- A parte initial-scale=1.0 define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>Manugurumi</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Cabeçalho da página -->
+  <header>
+    <div id="logo">
+      <img id="logoImg" src="imagens/logo.png">
+      <h1>Manugurumi</h1>
+    </div>
+    <div class="menu">
+      <div class="box"> <a href="sobremim.html">Sobre mim</a>
+      </div>
+      <div class="box"> <a href="produtos.html" >Produtos</a> 
+      </div>
+      <div class="box"> <a href="cuidados.html">Cuidados</a> </div>
+    </div>
+  </header>
+
+  <!-- Área principal -->
+  <main>
+
+    <!-- Coluna esquerda, produtos -->
+    <div class="coluna-esquerda">
+      <div class="card">
+        <h1>Combos</h1>
+        <div class="grid miniGrid">
+          <div class="produto">
+            <p class="tituloProduto">Monstros S.A</p>
+            <img src="imagens/monstros.png">
+            <p class="precoProduto">R$: 160,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Rick and Morty</p>
+            <img src="imagens/rm.png">
+            <p class="precoProduto">R$: 140,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Meninas</p>
+            <img src="imagens/meninas.png">
+            <p class="precoProduto">R$: 180,00</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h1>Sob Encomenda</h1>
+        <div class="grid">
+          <div class="produto">
+            <p class="tituloProduto">Luffy - One Piece</p>
+            <img src="imagens/luffy.png">
+            <p class="precoProduto">R$: 65,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Pantera Cor-de-Rosa</p>
+            <img src="imagens/pantera.png">
+            <p class="precoProduto">R$: 120,00</p>
+            </div>
+          <div class="produto">
+            <p class="tituloProduto">Big Hero</p>
+            <img src="imagens/bighero.png">
+            <p class="precoProduto">R$: 65,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Mulher Maravilha</p>
+            <img src="imagens/mulherm.png">
+            <p class="precoProduto">R$: 70,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Hello Kitty</p>
+            <img src="imagens/hellok.png">
+            <p class="precoProduto">R$: 28,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Harry Potter </p>
+            <img src="imagens/harry.png">
+            <p class="precoProduto">R$: 125,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Yoda</p>
+            <img src="imagens/yoda.png">
+            <p class="precoProduto">R$: 120,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Girassol</p>
+            <img src="imagens/girassol.png">
+            <p class="precoProduto">R$: 60,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">BB-8 Star Wars</p>
+            <img src="imagens/bb8.png">
+            <p class="precoProduto">R$: 120,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Mundo Bita</p>
+            <img src="imagens/mundobita.png">
+            <p class="precoProduto">R$: 90,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Capitão América</p>
+            <img src="imagens/capitao.png">
+            <p class="precoProduto">R$: 75,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Homem Aranha</p>
+            <img src="imagens/homemA.png">
+            <p class="precoProduto">R$: 20,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna direita, destaques-->
+    <div class="coluna-direita">
+      <div class="card" id="promocaoBanner">
+        <h1 id="promocaoH1">Sob encomenda</h1>
+        <h2 id="promocaoValor">*-*</h2>
+      </div>
+      <div class="card">
+        <h2>Sobre mim </h2>
+        <div class="sobreItens">
+          <img class="sobreImg" src="imagens/Sobre.jpeg">
+          <img class="sobreImg" src="imagens/sophia.png">
+        </div>
+        <p class="sobreTexto">
+          <a href="sobremim.html"> Conheça sobre mim</a>
+        </p>
+      </div>
+      <div class="card lastCard">
+        <h2>Redes Sociais</h2>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100076480321058&mibextid=LQQJ4d" target="_blank"> <img src="imagens/facebook.png" width="100" height="100"> </a>
+          
+          <a href="https://instagram.com/manugurumi_?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="imagens/instagram.jpg" width="100" height="100"> </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Ícone de telefone, para entrega -->
+  <div id="entrega">
+    <a href="https://www.whatsapp.com/?lang=pt_br" target="_target">
+      <img src="imagens/telefone.png">
+      <div id="tel">
+        <p>(11) 96978-1**</p>
+        <p> Encomendas via WhatsApp! </p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Ícone de interrogação, explicação -->
+  <div id="interrogação">
+    <a href="https://www.google.com/search?q=o+que+%C3%A9+amigurumi&rlz=1C1GCEB_enBR997BR997&oq=o+que+%C3%A9+amigurumi&aqs=chrome..69i57j69i60.5400j0j1&sourceid=chrome&ie=UTF-8" target="_target">
+      <img src="imagens/interro.png">
+      <div id="inte">
+        <p>O que é Amigurumi?🥰</p>
+        <p>É uma técnica japonesa para criar pequenos bonecos feitos de crochê ou tricô. E  "Manugurumi" é a junção do meu apelido Manu com o artesanato!</p>
+      </div>
+    </a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color:#faf0f0;
+  color: #52494f;
+  font-family: Candara, Helvetica, sans-serif;
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+header h1{
+  font-size: 5rem;
+  user-select: none;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#logoImg {
+  margin-right: 10px;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+.menu {
+  background-color: #f7bfd8;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+}
+
+.menu a {
+  border-radius: 80%;
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+  font-size:30px;
+  transition: background-color .5s;
+  box-shadow: 1 2px 4px rgb(0, 0, 0, 0.5);
+}
+
+ .menu a:hover {
+   background-color: white;
+   color: #52494f;
+   transition: background-color .5s;
+ }
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 1px 3px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.produto {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow .5s;
+}
+
+.produto:hover {
+  box-shadow: 5px 10px 15px #bbbbbb;
+}
+
+.produto img {
+  border-radius: 50%;
+  height: 200px;
+  border: 2px solid #f593d1;
+}
+
+.tituloProduto {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.precoProduto {
+  margin: 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 16px;
+}
+
+.minigrid
+{
+  height: 290px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.coluna-esquerda 
+{
+  width: 75%;
+  float: left;
+}
+
+.coluna-direita 
+{
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+
+#promocaoBanner
+{
+  height: 200px;
+  background-image: url('imagens/todos.png');
+  background-size: 150%;
+  color: white;
+  text-shadow: 0 0 4px #f7bfd8;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow .5s;
+}
+  
+  #promocaoBanner:hover
+  {
+    box-shadow:10px 10px 16px #888888;
+  }
+
+  #promocaoValor
+  {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+
+.sobreImg
+{
+  height: 125px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #888888;
+  margin: 10px;
+  cursor: pointer;
+  transition: box-shadow .5s;
+}
+
+.sobreImg:hover
+{
+ box-shadow: 5px 10px 10px #888888;
+}
+
+.sobreTexto a
+{
+  color: #f7bfd8;
+}
+
+.sobreItens 
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.promo
+{
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow .5s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.promo:hover
+{
+  box-shadow: 0 0 20px #888888;
+}
+
+.promo img
+{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social
+{
+  display: flex;  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social img
+{
+  opacity: 0.3;
+  margin: 5px;
+  transition: opacity .5s;
+  cursor: pointer;
+}
+
+.social img:hover
+{
+  opacity: 0.7;
+}
+
+
+#entrega
+{
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 300px;
+  height: 100px;
+}
+
+#entrega img 
+{
+  position: absolute;
+  right: 10px;
+  width: 95px;
+}
+
+#tel 
+{
+  position: absolute;
+    height: 80px;
+    width: 210px;
+    background-color: #52494f;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    right: 120px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#tel p
+{
+  margin: 0
+}
+
+#entrega img:hover + #tel 
+{
+  opacity: 1;
+}
+
+/*interrogação*/
+ #interrogação
+{
+  position: absolute;
+  top:60px;
+  right: 9px;
+  width: 300px;
+  height: 300px;
+}
+
+#interrogação img 
+{
+  position: absolute;
+  top:60px;
+  right: 7px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+#inte
+{
+  position: absolute;
+  height: 200px;
+  width:220px;
+  background-color:#52494f;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  right: 100px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity .5s;
+  top:10px;
+}
+
+#int p
+{
+  margin: 0
+}
+
+#interrogação img:hover + #inte 
+{
+  opacity: 1;
+}
+ */
+/*@media é css condicional, para indicar condição de tamanho, responsividade*/
+
+@media screen and (max-width: 320px) 
+{
+  .coluna-esquerda
+  {
+  width: 100%;
+  }
+
+  .coluna-direita
+  {
+    width: 100px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 2000px)
+{
+  header h1
+  {
+  font-size: 3rem;
+  }
+  body
+  {
+    padding: 5px 25px 25px 25px
+  }
+}
